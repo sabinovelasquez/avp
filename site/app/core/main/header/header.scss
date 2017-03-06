@@ -4,4 +4,11 @@
 header{
   min-height: 420px;
   background-size: cover!important;
+  .jumbotron{
+    margin-top: 20px;
+    background: transparent;
+    h1, p{
+      color: white;
+    }
+  }
 }

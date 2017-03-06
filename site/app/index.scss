@@ -3,24 +3,37 @@
 @import './core/css/common';
 @import './core/css/logo';
 
-// @import url(https://fonts.googleapis.com/css?family=Cinzel:400,700);
+@import url('https://fonts.googleapis.com/css?family=Fjalla+One');
+@import url('https://fonts.googleapis.com/css?family=Average');
 
-body, html{
+body,
+html{
+  font-family: 'Average', serif;
   height: 100%;
 }
 
-.glyphicon {
-    display: inline-block;
-    font-family: 'FontAwesome';
-    font-style: normal;
-    font-weight: normal;
-    line-height: 1;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
+h1,
+h2,
+h3,
+h4,
+h5{
+  text-transform: uppercase;
+  font-family: 'Fjalla One', sans-serif;
 }
-.glyphicon-chevron-left:before {
-  content: "\f053";
+
+.glyphicon{
+  font-family: 'FontAwesome';
+  font-weight: normal;
+  font-style: normal;
+  line-height: 1;
+  display: inline-block;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
-.glyphicon-chevron-right:before {
-  content: "\f054";
+.glyphicon-chevron-left:before{
+  content: '\f053';
+}
+.glyphicon-chevron-right:before{
+  content: '\f054';
 }
