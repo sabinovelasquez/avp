@@ -1,0 +1,7 @@
+nav-bar
+
+#videos.container
+  .videos
+    .col-sm-3.video(ng-repeat='item in videos.items')
+      img.img-responsive(ng-src='{{item.snippet.thumbnails.high.url}}')
+      h3 {{item.snippet.title}}

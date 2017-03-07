@@ -8,6 +8,12 @@ export default ngModule => {
         template: require('../main/main.jade'),
         controller: 'MainCtrl',
         controllerAs: 'main',
+      })
+      .state('videos', {
+        url: '/videos',
+        template: require('../main/videos/videos.jade'),
+        controller: 'VideosCtrl',
+        controllerAs: 'videos',
       });
     }
   );

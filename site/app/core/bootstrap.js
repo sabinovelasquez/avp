@@ -10,12 +10,13 @@ const ngModule = angular.module('app', [
   'ui.bootstrap',
   'ui.router',
   'ngMap',
+  'jtt_youtube',
 ]);
 
 require('./config')(ngModule);
 require('./controllers')(ngModule);
 require('./directives')(ngModule);
-// require('./services')(ngModule);
+require('./services')(ngModule);
 
 angular.element(document).ready(() => {
   angular.bootstrap(document, ['app'], {

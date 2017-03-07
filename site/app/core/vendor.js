@@ -3,6 +3,7 @@ module.exports = () => {
   require('angular-ui-bootstrap/dist/ui-bootstrap-csp.css');
   require('animate.css/animate.css');
   require('../index.scss');
+  require('./main/videos/videos.scss');
 
   require('angular');
   require('angular-animate');
@@ -15,6 +16,7 @@ module.exports = () => {
   require('ng-parallax');
   require('font-awesome-webpack');
   require('../../bower_components/ngmap/build/scripts/ng-map.min.js');
+  require('../../node_modules/angular-youtube-api-factory/dist/angular-youtube-api-factory.min.js');
 
   // polyfills
   require('../polyfills/es2015_ArrayPrototype_find');
