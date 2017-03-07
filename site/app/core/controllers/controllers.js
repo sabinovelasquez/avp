@@ -3,8 +3,13 @@ export default ngModule => {
     this.parallaxBg = '../core/img/header.jpg';
   });
   ngModule.controller('VideosCtrl', function VideosCtrl(YoutubeService) {
-    YoutubeService.getVideosFromChannelById('UCve7_yAZHFNipzeAGBI5t9g').then( (response) => {
+    YoutubeService.getVideoById('04NFbC86gLc').then( (response) => {
       this.items = response.data.items;
+    }).catch( (error) => {
+      this.error = error;
+    });
+    YoutubeService.getVideosFromChannelById('UCbuSvPzveKFD73hLxThMeng').then( (response) => {
+      // this.items = response.data.items;
     }).catch( (error) => {
       this.error = error;
     });
